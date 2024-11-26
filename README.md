@@ -18,6 +18,12 @@ This project implements a **CCSDS-compliant Telemetry (TM)** communication syste
 
 - **No Frame Detection**: Since the satellite only needs to generate and send the frames, **frame detection** is not part of this project. The ground station will handle frame detection and processing.
 
+## Project Architecture
+
+The architecture of the CCSDS TM communication system is outlined in the diagram below. It shows the main components involved in frame generation on the satellite side, including the creation of the TM frame structure, the inclusion of the ASM, and the transmission to the communication link.
+
+![Project Architecture](images/HighLevel.png)
+
 ## Features
 
 - **TM Frame Generation**: Creation of CCSDS-compliant Telemetry frames with the correct structure.
