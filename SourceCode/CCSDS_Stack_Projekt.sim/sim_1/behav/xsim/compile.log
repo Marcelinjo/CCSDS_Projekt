@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.srcs/sources_1/new/ASM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ASM'
+INFO: [VRFC 10-163] Analyzing VHDL file "X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.srcs/sources_1/new/Header_Generator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'HeaderGenerator'
+INFO: [VRFC 10-163] Analyzing VHDL file "X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.srcs/sources_1/new/PacketSequencer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PacketSequencer'
+INFO: [VRFC 10-163] Analyzing VHDL file "X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TopLevel'
