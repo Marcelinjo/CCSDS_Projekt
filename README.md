@@ -1,27 +1,31 @@
-# CCSDS Telemetry (TM) Communication with ASM in VHDL
+# CCSDS Telemetry (TM) Communication with ASM - Satellite Side in VHDL
 
-This project implements a **CCSDS-compliant Telemetry (TM)** communication system in VHDL, focusing on the generation and detection of **TM frames** with **Attached Synchronization Marker (ASM)**. The system follows the CCSDS standard for telemetry data transmission, ensuring frame synchronization at the receiver side using ASM.
+This project implements a **CCSDS-compliant Telemetry (TM)** communication system in VHDL, focusing on the **generation** of **TM frames** with an **Attached Synchronization Marker (ASM)**. The goal is to generate telemetry frames on the satellite side for transmission to a ground station. The system follows the CCSDS standard for telemetry data transmission, including frame synchronization with the ASM marker.
 
 ## Project Structure
 
-- **TM Frame Generation**: Implementing the basic structure of CCSDS Telemetry (TM) frames, including:
-  - **Primary Header**: Contains essential information about the frame (e.g., Sequence Count, Packet ID).
-  - **Payload**: The actual telemetry data to be transmitted.
-  - **Operational Control Field (OCF)**: Optional field for mission-specific control information.
-  - **Attached Synchronization Marker (ASM)**: Added before each frame to mark the beginning of a new frame for synchronization.
+- **TM Frame Generation**: The system generates the basic structure of CCSDS Telemetry (TM) frames, which includes:
+  - **Attached Synchronization Marker (ASM)**: This marker is placed before each frame to ensure synchronization at the receiver side (ground station).
+  - **Primary Header**: Contains essential information such as Sequence Count, Packet ID, and optional fields.
+  - **Payload**: The actual telemetry data, such as sensor readings or satellite status information.
+  - **Operational Control Field (OCF)**: An optional field for mission-specific control or status information.
 
-- **Synchronization**: The **ASM** is used to synchronize the receiver with the incoming frame stream. The ASM ensures that the frame boundaries are correctly detected.
+- **Frame Generation Process**: 
+  - The ASM is prepended to each frame to help the ground station detect the start of the frame.
+  - The Primary Header is filled with metadata like the Sequence Count and Packet ID.
+  - The Payload contains the telemetry data that needs to be transmitted.
+  - The frame is then prepared for transmission over the communication link.
 
-- **No Error Correction**: The system does not implement error detection or correction mechanisms (e.g., CRC or Reed-Solomon).
+- **No Frame Detection**: Since the satellite only needs to generate and send the frames, **frame detection** is not part of this project. The ground station will handle frame detection and processing.
 
 ## Features
 
-- **TM frame generation** with the standard CCSDS frame structure.
-- **Attached Synchronization Marker (ASM)** to identify the start of each frame for synchronization.
-- **Primary Header** containing key frame information (e.g., Sequence Count).
-- **Payload**: Telemetry data to be transmitted.
-- **Operational Control Field (OCF)**: Optional field for mission-specific control information.
-- **No error detection or correction**: Focuses purely on frame generation and synchronization.
+- **TM Frame Generation**: Creation of CCSDS-compliant Telemetry frames with the correct structure.
+- **Attached Synchronization Marker (ASM)**: Each frame starts with an ASM to mark the beginning of the frame for synchronization at the receiver side.
+- **Primary Header**: Includes the sequence count and packet ID for frame identification.
+- **Payload**: Contains telemetry data that needs to be transmitted.
+- **Operational Control Field (OCF)** (optional): Provides mission-specific control data if required.
+- **No error correction**: This project focuses on frame generation and synchronization, without implementing error detection or correction.
 
 ## Usage
 
