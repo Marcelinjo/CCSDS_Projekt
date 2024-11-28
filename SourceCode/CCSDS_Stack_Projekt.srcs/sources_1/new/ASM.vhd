@@ -11,6 +11,6 @@ end ASM;
 architecture Behavioral of ASM is
 begin
 
-    asm_data <= "00011010110011111111110000011101"; -- 0x0x1ACFFC1D nach CCSDS 131.0-B-3, Chapter 9.3
+    asm_data <= "00011010110011111111110000011101"; -- 0x1ACFFC1D nach CCSDS 131.0-B-3, Chapter 9.3
     
 end Behavioral;
