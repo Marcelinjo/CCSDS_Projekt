@@ -14,7 +14,7 @@ end TopLevel;
 
 architecture Behavioral of TopLevel is
     -- Signale für Submodule
-    signal asm_data       : STD_LOGIC_VECTOR(7 downto 0);
+    signal asm_Field       : STD_LOGIC_VECTOR(31 downto 0);
     signal header_data    : STD_LOGIC_VECTOR(7 downto 0);
     signal packet_data    : STD_LOGIC_VECTOR(7 downto 0);
     signal buffer_in      : STD_LOGIC_VECTOR(7 downto 0);
@@ -25,10 +25,7 @@ begin
     -- Instanzierung der Submodule
     ASM_Inst : entity work.ASM
         Port Map (
-            clk       => clk,
-            reset     => reset,
-            start     => start,
-            asm_data  => asm_data
+            asm_data  => asm_Field
         );
 
     Header_Inst : entity work.HeaderGenerator
@@ -58,7 +55,7 @@ begin
             if start = '1' and buffer_full = '0' then
                 -- Auswahl der Quelle
                 case buffer_pointer is
-                    when 0 => buffer_in <= asm_data;
+                    when 0 => buffer_in <= asm_Field;
                     when 1 => buffer_in <= header_data;
                     when 2 => buffer_in <= packet_data;
                     when others => buffer_in <= (others => '0');
