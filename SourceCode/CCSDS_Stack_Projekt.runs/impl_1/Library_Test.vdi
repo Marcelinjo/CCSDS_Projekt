@@ -1,18 +1,16 @@
-
-*** Running vivado
-    with args -log Library_Test.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Library_Test.tcl -notrace
-
-
-ECHO ist ausgeschaltet (OFF).
-ECHO ist ausgeschaltet (OFF).
-
-****** Vivado v2023.1 (64-bit)
-  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
-  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Apr 15 16:24:24 2025
+# Process ID: 3376
+# Current directory: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/impl_1
+# Command line: vivado.exe -log Library_Test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Library_Test.tcl -notrace
+# Log file: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/impl_1/Library_Test.vdi
+# Journal file: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/impl_1\vivado.jou
+# Running On: DESKTOP-HT5OLI6, OS: Windows, CPU Frequency: 3400 MHz, CPU Physical cores: 12, Host memory: 17128 MB
+#-----------------------------------------------------------
 source Library_Test.tcl -notrace
 create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 438.223 ; gain = 165.270
 Command: link_design -top Library_Test -part xc7z020clg400-1

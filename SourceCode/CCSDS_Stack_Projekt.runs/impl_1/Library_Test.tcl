@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.runs/impl_1/TopLevel.tcl"
+  variable script "C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/impl_1/Library_Test.tcl"
   variable category "vivado_impl"
 }
 
@@ -130,18 +130,18 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.cache/wt [current_project]
-  set_property parent.project_path X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.xpr [current_project]
-  set_property ip_output_repo X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.cache/wt [current_project]
+  set_property parent.project_path C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.xpr [current_project]
+  set_property ip_output_repo C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.runs/synth_1/TopLevel.dcp
+  add_files -quiet C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/synth_1/Library_Test.dcp
 OPTRACE "read constraints: implementation" START { }
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
-  link_design -top TopLevel -part xc7z020clg400-1 
+  link_design -top Library_Test -part xc7z020clg400-1 
 OPTRACE "link_design" END { }
 OPTRACE "gray box cells" START { }
 OPTRACE "gray box cells" END { }
@@ -173,10 +173,10 @@ OPTRACE "opt_design" END { }
 OPTRACE "read constraints: opt_design_post" START { }
 OPTRACE "read constraints: opt_design_post" END { }
 OPTRACE "opt_design reports" START { REPORT }
-  create_report "impl_1_opt_report_drc_0" "report_drc -file TopLevel_drc_opted.rpt -pb TopLevel_drc_opted.pb -rpx TopLevel_drc_opted.rpx"
+  create_report "impl_1_opt_report_drc_0" "report_drc -file Library_Test_drc_opted.rpt -pb Library_Test_drc_opted.pb -rpx Library_Test_drc_opted.rpx"
 OPTRACE "opt_design reports" END { }
 OPTRACE "Opt Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force TopLevel_opt.dcp
+  write_checkpoint -force Library_Test_opt.dcp
 OPTRACE "Opt Design: write_checkpoint" END { }
   close_msg_db -file opt_design.pb
 } RESULT]
@@ -207,12 +207,12 @@ OPTRACE "place_design" END { }
 OPTRACE "read constraints: place_design_post" START { }
 OPTRACE "read constraints: place_design_post" END { }
 OPTRACE "place_design reports" START { REPORT }
-  create_report "impl_1_place_report_io_0" "report_io -file TopLevel_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file TopLevel_utilization_placed.rpt -pb TopLevel_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file TopLevel_control_sets_placed.rpt"
+  create_report "impl_1_place_report_io_0" "report_io -file Library_Test_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file Library_Test_utilization_placed.rpt -pb Library_Test_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file Library_Test_control_sets_placed.rpt"
 OPTRACE "place_design reports" END { }
 OPTRACE "Place Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force TopLevel_placed.dcp
+  write_checkpoint -force Library_Test_placed.dcp
 OPTRACE "Place Design: write_checkpoint" END { }
   close_msg_db -file place_design.pb
 } RESULT]
@@ -240,7 +240,7 @@ OPTRACE "read constraints: phys_opt_design_post" END { }
 OPTRACE "phys_opt_design report" START { REPORT }
 OPTRACE "phys_opt_design report" END { }
 OPTRACE "Post-Place Phys Opt Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force TopLevel_physopt.dcp
+  write_checkpoint -force Library_Test_physopt.dcp
 OPTRACE "Post-Place Phys Opt Design: write_checkpoint" END { }
   close_msg_db -file phys_opt_design.pb
 } RESULT]
@@ -266,17 +266,17 @@ OPTRACE "route_design" END { }
 OPTRACE "read constraints: route_design_post" START { }
 OPTRACE "read constraints: route_design_post" END { }
 OPTRACE "route_design reports" START { REPORT }
-  create_report "impl_1_route_report_drc_0" "report_drc -file TopLevel_drc_routed.rpt -pb TopLevel_drc_routed.pb -rpx TopLevel_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file TopLevel_methodology_drc_routed.rpt -pb TopLevel_methodology_drc_routed.pb -rpx TopLevel_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file TopLevel_power_routed.rpt -pb TopLevel_power_summary_routed.pb -rpx TopLevel_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file TopLevel_route_status.rpt -pb TopLevel_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -report_unconstrained -file TopLevel_timing_summary_routed.rpt -pb TopLevel_timing_summary_routed.pb -rpx TopLevel_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file TopLevel_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file TopLevel_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file TopLevel_bus_skew_routed.rpt -pb TopLevel_bus_skew_routed.pb -rpx TopLevel_bus_skew_routed.rpx"
+  create_report "impl_1_route_report_drc_0" "report_drc -file Library_Test_drc_routed.rpt -pb Library_Test_drc_routed.pb -rpx Library_Test_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file Library_Test_methodology_drc_routed.rpt -pb Library_Test_methodology_drc_routed.pb -rpx Library_Test_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file Library_Test_power_routed.rpt -pb Library_Test_power_summary_routed.pb -rpx Library_Test_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file Library_Test_route_status.rpt -pb Library_Test_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -report_unconstrained -file Library_Test_timing_summary_routed.rpt -pb Library_Test_timing_summary_routed.pb -rpx Library_Test_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file Library_Test_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file Library_Test_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file Library_Test_bus_skew_routed.rpt -pb Library_Test_bus_skew_routed.pb -rpx Library_Test_bus_skew_routed.rpx"
 OPTRACE "route_design reports" END { }
 OPTRACE "Route Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force TopLevel_routed.dcp
+  write_checkpoint -force Library_Test_routed.dcp
 OPTRACE "Route Design: write_checkpoint" END { }
 OPTRACE "route_design misc" START { }
   close_msg_db -file route_design.pb
@@ -284,7 +284,7 @@ OPTRACE "route_design misc" START { }
 if {$rc} {
 OPTRACE "route_design write_checkpoint" START { CHECKPOINT }
 OPTRACE "route_design write_checkpoint" END { }
-  write_checkpoint -force TopLevel_routed_error.dcp
+  write_checkpoint -force Library_Test_routed_error.dcp
   step_failed route_design
   return -code error $RESULT
 } else {
@@ -302,16 +302,16 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
-  catch { write_mem_info -force -no_partial_mmi TopLevel.mmi }
+  catch { write_mem_info -force -no_partial_mmi Library_Test.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }
-  write_bitstream -force TopLevel.bit 
+  write_bitstream -force Library_Test.bit 
 OPTRACE "write_bitstream" END { }
 OPTRACE "write_bitstream misc" START { }
 OPTRACE "read constraints: write_bitstream_post" START { }
 OPTRACE "read constraints: write_bitstream_post" END { }
-  catch {write_debug_probes -quiet -force TopLevel}
-  catch {file copy -force TopLevel.ltx debug_nets.ltx}
+  catch {write_debug_probes -quiet -force Library_Test}
+  catch {file copy -force Library_Test.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {

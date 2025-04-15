@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.runs/synth_1'
+HD_PWD='C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log TopLevel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopLevel.tcl
+EAStep vivado -log Library_Test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Library_Test.tcl

@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.runs/impl_1'
+HD_PWD='C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -43,6 +43,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log TopLevel.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source TopLevel.tcl -notrace
+EAStep vivado -log Library_Test.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Library_Test.tcl -notrace
 
 
