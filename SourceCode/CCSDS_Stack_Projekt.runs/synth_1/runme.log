@@ -14,41 +14,61 @@ ECHO ist ausgeschaltet (OFF).
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source TopLevel.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 437.680 ; gain = 163.906
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 439.645 ; gain = 164.824
+Command: read_checkpoint -auto_incremental -incremental C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/utils_1/imports/synth_1/TopLevel.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/utils_1/imports/synth_1/TopLevel.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top TopLevel -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17236
+INFO: [Synth 8-7075] Helper process launched with PID 6712
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 876.480 ; gain = 413.922
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 881.027 ; gain = 408.832
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'TopLevel' [X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd:15]
-INFO: [Synth 8-638] synthesizing module 'ASM' [X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.srcs/sources_1/new/ASM.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'ASM' (0#1) [X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.srcs/sources_1/new/ASM.vhd:14]
-INFO: [Synth 8-638] synthesizing module 'HeaderGenerator' [X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.srcs/sources_1/new/Header_Generator.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'HeaderGenerator' (0#1) [X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.srcs/sources_1/new/Header_Generator.vhd:14]
-INFO: [Synth 8-638] synthesizing module 'PacketSequencer' [X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.srcs/sources_1/new/PacketSequencer.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'PacketSequencer' (0#1) [X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.srcs/sources_1/new/PacketSequencer.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'TopLevel' (0#1) [X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'ASM' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/ASM.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'ASM' (0#1) [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/ASM.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'HeaderGenerator' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/Header_Generator.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'HeaderGenerator' (0#1) [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/Header_Generator.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'PacketSequencer' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/PacketSequencer.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'PacketSequencer' (0#1) [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/PacketSequencer.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'OCFGenerator' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/OCFGenerator.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'OCFGenerator' (0#1) [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/OCFGenerator.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'FECGenerator' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/FECGenerator.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'FECGenerator' (0#1) [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/FECGenerator.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (0#1) [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd:16]
+WARNING: [Synth 8-3848] Net fifo_data_out in module/entity TopLevel does not have driver. [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd:23]
+WARNING: [Synth 8-3848] Net fifo_empty in module/entity TopLevel does not have driver. [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd:26]
+WARNING: [Synth 8-3848] Net fifo_pkt_ready in module/entity TopLevel does not have driver. [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd:24]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 967.102 ; gain = 504.543
+Finished Synthesize : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1508.152 ; gain = 1035.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 967.102 ; gain = 504.543
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1508.152 ; gain = 1035.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 967.102 ; gain = 504.543
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1508.152 ; gain = 1035.957
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'PacketSequencer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                 reading |                              010 |                               01
+                    done |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'PacketSequencer'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 967.102 ; gain = 504.543
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1796.988 ; gain = 1324.793
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -56,16 +76,23 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input    2 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 1     
 +---Registers : 
+	            16400 Bit    Registers := 1     
+	               48 Bit    Registers := 1     
 	               32 Bit    Registers := 1     
-	                8 Bit    Registers := 4     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 2034  
+	                1 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 1     
-	   4 Input    8 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 1     
+	   6 Input 16400 Bit        Muxes := 2     
+	   2 Input 16400 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 16    
+	   3 Input    1 Bit        Muxes := 2037  
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -82,22 +109,22 @@ No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1182.176 ; gain = 719.617
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:25 ; elapsed = 00:04:08 . Memory (MB): peak = 1853.898 ; gain = 1381.703
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1182.176 ; gain = 719.617
+Finished Timing Optimization : Time (s): cpu = 00:03:47 ; elapsed = 00:04:30 . Memory (MB): peak = 1934.250 ; gain = 1462.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1182.277 ; gain = 719.719
+Finished Technology Mapping : Time (s): cpu = 00:03:47 ; elapsed = 00:04:30 . Memory (MB): peak = 1934.250 ; gain = 1462.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -115,37 +142,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1182.277 ; gain = 719.719
+Finished IO Insertion : Time (s): cpu = 00:03:52 ; elapsed = 00:04:36 . Memory (MB): peak = 1934.250 ; gain = 1462.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1182.277 ; gain = 719.719
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:52 ; elapsed = 00:04:36 . Memory (MB): peak = 1934.250 ; gain = 1462.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1182.277 ; gain = 719.719
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:52 ; elapsed = 00:04:36 . Memory (MB): peak = 1934.250 ; gain = 1462.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1182.277 ; gain = 719.719
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:52 ; elapsed = 00:04:36 . Memory (MB): peak = 1934.250 ; gain = 1462.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1182.277 ; gain = 719.719
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:52 ; elapsed = 00:04:36 . Memory (MB): peak = 1934.250 ; gain = 1462.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1182.277 ; gain = 719.719
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:52 ; elapsed = 00:04:36 . Memory (MB): peak = 1934.250 ; gain = 1462.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -161,42 +188,37 @@ Report Cell Usage:
 +------+-----+------+
 |      |Cell |Count |
 +------+-----+------+
-|1     |BUFG |     1|
-|2     |LUT2 |     3|
-|3     |LUT3 |     7|
-|4     |LUT4 |     6|
-|5     |FDCE |    32|
-|6     |FDRE |     7|
-|7     |IBUF |     3|
-|8     |OBUF |    33|
+|1     |OBUF | 16401|
 +------+-----+------+
 
 Report Instance Areas: 
-+------+--------------+----------------+------+
-|      |Instance      |Module          |Cells |
-+------+--------------+----------------+------+
-|1     |top           |                |    92|
-|2     |  Header_Inst |HeaderGenerator |     9|
-+------+--------------+----------------+------+
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 16401|
++------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1182.277 ; gain = 719.719
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:52 ; elapsed = 00:04:36 . Memory (MB): peak = 1934.250 ; gain = 1462.055
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1182.277 ; gain = 719.719
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1182.277 ; gain = 719.719
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:52 ; elapsed = 00:04:36 . Memory (MB): peak = 1934.250 ; gain = 1462.055
+Synthesis Optimization Complete : Time (s): cpu = 00:03:52 ; elapsed = 00:04:36 . Memory (MB): peak = 1934.250 ; gain = 1462.055
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1195.105 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.179 . Memory (MB): peak = 1934.250 ; gain = 0.000
+WARNING: [Netlist 29-101] Netlist 'TopLevel' is not ideal for floorplanning, since the cellview 'TopLevel' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1298.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1934.250 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 95dfa1d6
+Synth Design complete | Checksum: 76264436
 INFO: [Common 17-83] Releasing license: Synthesis
-18 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+28 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1298.996 ; gain = 861.316
-INFO: [Common 17-1381] The checkpoint 'X:/MarcelSecret/Programmieren/ViVadoProjects/CCSDS_Stack_Projekt/CCSDS_Stack_Projekt.runs/synth_1/TopLevel.dcp' has been generated.
+synth_design: Time (s): cpu = 00:03:57 ; elapsed = 00:04:41 . Memory (MB): peak = 1934.250 ; gain = 1469.750
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/synth_1/TopLevel.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1934.250 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file TopLevel_utilization_synth.rpt -pb TopLevel_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 26 13:42:23 2024...
+report_utilization: Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1934.250 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May  7 14:08:46 2025...
