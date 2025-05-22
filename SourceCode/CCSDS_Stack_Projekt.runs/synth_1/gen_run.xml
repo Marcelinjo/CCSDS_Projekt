@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1746619348" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/TopLevel.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1747913743" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/TopLevel.dcp">
   <File Type="PA-TCL" Name="TopLevel.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="TopLevel_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="TopLevel_reports.tcl"/>
@@ -18,6 +18,12 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/FECGenerator.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FIFO_Stack.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -47,15 +53,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/TopLevel.vhd">
+    <File Path="$PSRCDIR/sources_1/new/TM_Generator.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/FIFO_Stack.vhd">
+    <File Path="$PSRCDIR/sources_1/new/TopLevel.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -68,6 +73,12 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Ports.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
