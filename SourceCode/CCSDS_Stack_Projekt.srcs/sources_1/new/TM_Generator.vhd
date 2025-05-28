@@ -167,6 +167,5 @@ begin
     -- Buffer-Ausgabe
     ----------------------------------------------------------------
     buffer_out  <= buffer_temp;
-    buffer_full <= fifo_full_int;
 
 end Behavioral;

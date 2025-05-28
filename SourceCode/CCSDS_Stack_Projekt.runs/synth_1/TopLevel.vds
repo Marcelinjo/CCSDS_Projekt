@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu May 22 13:35:47 2025
-# Process ID: 18280
+# Start of session at: Tue May 27 21:37:58 2025
+# Process ID: 9316
 # Current directory: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/synth_1
 # Command line: vivado.exe -log TopLevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopLevel.tcl
 # Log file: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/synth_1/TopLevel.vds
@@ -12,25 +12,24 @@
 # Running On: DESKTOP-HT5OLI6, OS: Windows, CPU Frequency: 3400 MHz, CPU Physical cores: 12, Host memory: 17128 MB
 #-----------------------------------------------------------
 source TopLevel.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 437.742 ; gain = 162.004
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 437.820 ; gain = 163.465
 Command: read_checkpoint -auto_incremental -incremental C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/utils_1/imports/synth_1/TopLevel.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/utils_1/imports/synth_1/TopLevel.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+read_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 462.656 ; gain = 24.836
 Command: synth_design -top TopLevel -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
-INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 15600
+INFO: [Synth 8-7075] Helper process launched with PID 9624
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1284.180 ; gain = 410.707
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1283.883 ; gain = 410.840
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'TopLevel' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd:13]
-INFO: [Synth 8-3491] module 'TM_Generator' declared at 'C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TM_Generator.vhd:6' bound to instance 'U_TM_Generator' of component 'TM_Generator' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd:14]
+INFO: [Synth 8-3491] module 'TM_Generator' declared at 'C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TM_Generator.vhd:6' bound to instance 'U_TM_Generator' of component 'TM_Generator' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd:55]
 INFO: [Synth 8-638] synthesizing module 'TM_Generator' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TM_Generator.vhd:22]
 INFO: [Synth 8-638] synthesizing module 'ASM' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/ASM.vhd:11]
 INFO: [Synth 8-256] done synthesizing module 'ASM' (0#1) [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/ASM.vhd:11]
@@ -45,56 +44,169 @@ INFO: [Synth 8-256] done synthesizing module 'OCFGenerator' (0#1) [C:/Users/marc
 INFO: [Synth 8-638] synthesizing module 'FECGenerator' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/FECGenerator.vhd:14]
 INFO: [Synth 8-256] done synthesizing module 'FECGenerator' (0#1) [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/FECGenerator.vhd:14]
 INFO: [Synth 8-256] done synthesizing module 'TM_Generator' (0#1) [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TM_Generator.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'TopLevel' (0#1) [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd:13]
+INFO: [Synth 8-3491] module 'TM_GEN_TestDriver' declared at 'C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TM_GEN_TestDriver.vhd:4' bound to instance 'U_TestDriver' of component 'TM_GEN_TestDriver' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'TM_GEN_TestDriver' [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TM_GEN_TestDriver.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'TM_GEN_TestDriver' (0#1) [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TM_GEN_TestDriver.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (0#1) [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd:14]
 WARNING: [Synth 8-4767] Trying to implement RAM 'fifo_mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
 	1: Invalid write to RAM. 
 	2: Unable to determine number of words or word size in RAM. 
 	3: No valid read/write found for RAM. 
 RAM "fifo_mem_reg" dissolved into registers
+WARNING: [Synth 8-7129] Port buffer_out[16399] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16398] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16397] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16396] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16395] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16394] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16393] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16392] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16391] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16390] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16389] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16388] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16387] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16386] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16385] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16384] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16383] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16382] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16381] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16380] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16379] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16378] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16377] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16376] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16375] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16374] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16373] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16372] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16371] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16370] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16369] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16368] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16367] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16366] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16365] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16364] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16363] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16362] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16361] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16360] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16359] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16358] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16357] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16356] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16355] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16354] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16353] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16352] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16351] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16350] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16349] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16348] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16347] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16346] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16345] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16344] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16343] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16342] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16341] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16340] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16339] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16338] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16337] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16336] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16335] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16334] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16333] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16332] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16331] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16330] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16329] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16328] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16327] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16326] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16325] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16324] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16323] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16322] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16321] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16320] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16319] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16318] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16317] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16316] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16315] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16314] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16313] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16312] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16311] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16310] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16309] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16308] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16307] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16306] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16305] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16304] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16303] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16302] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16301] in module TM_GEN_TestDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port buffer_out[16300] in module TM_GEN_TestDriver is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 2578.523 ; gain = 1705.051
+Finished RTL Elaboration : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 2572.992 ; gain = 1699.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 2578.523 ; gain = 1705.051
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:12 . Memory (MB): peak = 2572.992 ; gain = 1699.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 2578.523 ; gain = 1705.051
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:12 . Memory (MB): peak = 2572.992 ; gain = 1699.949
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2578.523 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2572.992 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/constrs_1/new/Ports.xdc]
 Finished Parsing XDC File [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/constrs_1/new/Ports.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/constrs_1/new/Ports.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopLevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopLevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 3307.797 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.035 . Memory (MB): peak = 3351.184 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3349.145 ; gain = 41.348
-INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
-INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.637 . Memory (MB): peak = 3351.184 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:56 ; elapsed = 00:01:53 . Memory (MB): peak = 3350.918 ; gain = 2477.445
+Finished Constraint Validation : Time (s): cpu = 00:02:33 ; elapsed = 00:02:40 . Memory (MB): peak = 3353.254 ; gain = 2480.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:56 ; elapsed = 00:01:53 . Memory (MB): peak = 3350.918 ; gain = 2477.445
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:33 ; elapsed = 00:02:40 . Memory (MB): peak = 3353.254 ; gain = 2480.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:56 ; elapsed = 00:01:53 . Memory (MB): peak = 3350.918 ; gain = 2477.445
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:34 ; elapsed = 00:02:40 . Memory (MB): peak = 3353.254 ; gain = 2480.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:02:48 ; elapsed = 00:02:56 . Memory (MB): peak = 3353.254 ; gain = 2480.211
+---------------------------------------------------------------------------------
+FIFO_Stack__GB16PacketSequencer__GB1FIFO_Stack__GB12FIFO_Stack__GB7FIFO_Stack__GB9FIFO_Stack__GB17PacketSequencer__GB3case__12279_FIFO_Stack__GDFIFO_Stack__GB25FIFO_Stack__GB11FIFO_Stack__GB23datapath__21_TM_Generator__GDFIFO_Stack__GB3FIFO_Stack__GB10FIFO_Stack__GB6FIFO_Stack__GB24datapath__22_TM_Generator__GDFIFO_Stack__GB19FIFO_Stack__GB2datapath__18_TM_Generator__GDFIFO_Stack__GB5TM_Generator__GCB4datapath__24_TM_Generator__GDTM_GEN_TestDriverFIFO_Stack__GB18FIFO_Stack__GB20datapath__26_TM_Generator__GDFIFO_Stack__GB22TM_Generator__GCB7FIFO_Stack__GB15logic__57354_TM_Generator__GDPacketSequencer__GB2datapath__19_TM_Generator__GDFIFO_Stack__GB21FIFO_Stack__GB14case__12286_TM_Generator__GDFIFO_Stack__GB13FIFO_Stack__GB1FIFO_Stack__GB8case__12291_TM_Generator__GD---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:03:16 ; elapsed = 00:03:25 . Memory (MB): peak = 3771.734 ; gain = 2898.691
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'PacketSequencer'
 ---------------------------------------------------------------------------------------------------
@@ -106,160 +218,11 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Packe
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'PacketSequencer'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:06:49 ; elapsed = 00:06:58 . Memory (MB): peak = 3350.918 ; gain = 2477.445
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:09:47 ; elapsed = 00:10:14 . Memory (MB): peak = 3824.188 ; gain = 2951.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start RTL Component Statistics 
----------------------------------------------------------------------------------
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input   13 Bit       Adders := 1     
-	   2 Input   12 Bit       Adders := 9     
-	   2 Input   11 Bit       Adders := 1     
-	   2 Input    9 Bit       Adders := 1     
-	   2 Input    8 Bit       Adders := 2     
-	   2 Input    3 Bit       Adders := 1     
-+---Registers : 
-	            16400 Bit    Registers := 1     
-	               48 Bit    Registers := 1     
-	               32 Bit    Registers := 1     
-	               16 Bit    Registers := 2     
-	               12 Bit    Registers := 2     
-	               11 Bit    Registers := 1     
-	                8 Bit    Registers := 6134  
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 9     
-+---Muxes : 
-	   2 Input 32768 Bit        Muxes := 1     
-	   6 Input 16400 Bit        Muxes := 2     
-	   2 Input 16400 Bit        Muxes := 1     
-	   2 Input   48 Bit        Muxes := 3     
-	   2 Input   12 Bit        Muxes := 2     
-	   2 Input    8 Bit        Muxes := 28677 
-	   2 Input    3 Bit        Muxes := 6     
-	   2 Input    1 Bit        Muxes := 22    
-	   3 Input    1 Bit        Muxes := 2037  
----------------------------------------------------------------------------------
-Finished RTL Component Statistics 
+Start Mimic Skeleton from Reference
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Part Resource Summary
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:10:50 ; elapsed = 00:11:18 . Memory (MB): peak = 4202.047 ; gain = 3329.004
 ---------------------------------------------------------------------------------
-Part Resources:
-DSPs: 220 (col length:60)
-BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
----------------------------------------------------------------------------------
-Finished Part Resource Summary
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Cross Boundary and Area Optimization
----------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'header_index_reg[1]__0' (FDRE) to 'header_index_reg[1]'
-INFO: [Synth 8-3886] merging instance 'header_index_reg[2]__0' (FDRE) to 'header_index_reg[2]'
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:15:04 ; elapsed = 00:15:42 . Memory (MB): peak = 3350.918 ; gain = 2477.445
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:15:40 ; elapsed = 00:16:18 . Memory (MB): peak = 3350.918 ; gain = 2477.445
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:15:44 ; elapsed = 00:16:22 . Memory (MB): peak = 3350.918 ; gain = 2477.445
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
-WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:15:44 ; elapsed = 00:16:22 . Memory (MB): peak = 3350.918 ; gain = 2477.445
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:15:49 ; elapsed = 00:16:27 . Memory (MB): peak = 3350.918 ; gain = 2477.445
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:15:49 ; elapsed = 00:16:27 . Memory (MB): peak = 3350.918 ; gain = 2477.445
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:15:49 ; elapsed = 00:16:27 . Memory (MB): peak = 3350.918 ; gain = 2477.445
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:15:49 ; elapsed = 00:16:27 . Memory (MB): peak = 3350.918 ; gain = 2477.445
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:15:49 ; elapsed = 00:16:27 . Memory (MB): peak = 3350.918 ; gain = 2477.445
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:15:49 ; elapsed = 00:16:27 . Memory (MB): peak = 3350.918 ; gain = 2477.445
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
-
-Report Cell Usage: 
-+-+-----+------+
-| |Cell |Count |
-+-+-----+------+
-+-+-----+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:15:49 ; elapsed = 00:16:27 . Memory (MB): peak = 3350.918 ; gain = 2477.445
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:14:06 ; elapsed = 00:15:41 . Memory (MB): peak = 3350.918 ; gain = 1705.051
-Synthesis Optimization Complete : Time (s): cpu = 00:15:49 ; elapsed = 00:16:28 . Memory (MB): peak = 3350.918 ; gain = 2477.445
-INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3350.918 ; gain = 0.000
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3350.918 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Synth Design complete | Checksum: e60c5e23
-INFO: [Common 17-83] Releasing license: Synthesis
-39 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:15:56 ; elapsed = 00:16:36 . Memory (MB): peak = 3350.918 ; gain = 2888.309
-INFO: [Common 17-1381] The checkpoint 'C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/synth_1/TopLevel.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file TopLevel_utilization_synth.rpt -pb TopLevel_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu May 22 13:52:36 2025...

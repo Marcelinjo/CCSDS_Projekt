@@ -6,7 +6,8 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 -- Top-Level Entity
 entity TopLevel is
     Port (
-        clk : in STD_LOGIC
+        clk : in STD_LOGIC;
+        dummy_out : out STD_LOGIC
     );
 end TopLevel;
 
@@ -14,15 +15,28 @@ architecture Behavioral of TopLevel is
 
     -- Komponentendeklaration für TM_Generator
     component TM_Generator
-    Port (
-        clk         : in  STD_LOGIC;
-        reset       : in  STD_LOGIC;
-        start       : in  STD_LOGIC;
-        data_in     : in  STD_LOGIC_VECTOR(7 downto 0);
-        data_valid  : in  STD_LOGIC;
-        buffer_out  : out STD_LOGIC_VECTOR(16399 downto 0);
-        buffer_full : out STD_LOGIC
-    );
+        Port (
+            clk         : in  STD_LOGIC;
+            reset       : in  STD_LOGIC;
+            start       : in  STD_LOGIC;
+            data_in     : in  STD_LOGIC_VECTOR(7 downto 0);
+            data_valid  : in  STD_LOGIC;
+            buffer_out  : out STD_LOGIC_VECTOR(16399 downto 0);
+            buffer_full : out STD_LOGIC
+        );
+    end component;
+    
+    -- Komponentendeklaration für TM_GEN_TestDriver
+    component TM_GEN_TestDriver
+        Port (
+            clk         : in  STD_LOGIC;
+            buffer_full : in  STD_LOGIC;
+            buffer_out  : in  STD_LOGIC_VECTOR(16399 downto 0);
+            reset       : out STD_LOGIC;
+            start       : out STD_LOGIC;
+            data_in     : out STD_LOGIC_VECTOR(7 downto 0);
+            data_valid  : out STD_LOGIC
+        );
     end component;
 
 
@@ -48,24 +62,19 @@ begin
         buffer_out  => buffer_out,
         buffer_full => buffer_full
     );
-
-    process(clk)
-begin
-
-
-    if rising_edge(clk) then
-        reset <= '0';  -- Später wieder auf '0' setzen
-
-        -- Einfaches Beispiel: ein Byte senden, wenn nicht voll
-        if buffer_full = '0' then
-            data_in    <= x"AB";  -- Testwert
-            data_valid <= '1';
-            start      <= '1';
-        else
-            data_valid <= '0';
-        end if;
-    end if;
-end process;
+    -- Instanz von TM_Generator_TestDriver
+    U_TestDriver: TM_GEN_TestDriver
+    port map (
+        clk         => clk,
+        buffer_full => buffer_full,
+        buffer_out  => buffer_out,
+        reset       => reset,
+        start       => start,
+        data_in     => data_in,
+        data_valid  => data_valid
+    );
+    
+    dummy_out <= buffer_out(0);  -- Um die Optimierung zu vermeiden
 
 
 end Behavioral;

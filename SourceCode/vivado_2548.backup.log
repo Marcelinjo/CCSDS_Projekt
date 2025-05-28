@@ -3,10 +3,10 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed May 28 11:00:32 2025
-# Process ID: 7632
+# Start of session at: Thu May 22 13:07:55 2025
+# Process ID: 2548
 # Current directory: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18428 C:\Users\marci\Desktop\CCSDS_Projekt\SourceCode\CCSDS_Stack_Projekt.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10416 C:\Users\marci\Desktop\CCSDS_Projekt\SourceCode\CCSDS_Stack_Projekt.xpr
 # Log file: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/vivado.log
 # Journal file: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode\vivado.jou
 # Running On: DESKTOP-HT5OLI6, OS: Windows, CPU Frequency: 3400 MHz, CPU Physical cores: 12, Host memory: 17128 MB
@@ -81,7 +81,33 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'Z:/Xilinx/Vivado/2023.1/data/ip'.
-open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 1440.594 ; gain = 300.289
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 1473.645 ; gain = 288.266
 update_compile_order -fileset sources_1
+file mkdir C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/constrs_1
+file mkdir C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/constrs_1/new
+close [ open C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/constrs_1/new/Ports.xdc w ]
+add_files -fileset constrs_1 C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/constrs_1/new/Ports.xdc
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/utils_1/imports/synth_1/TopLevel.dcp with file C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/synth_1/TopLevel.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu May 22 13:12:57 2025] Launched synth_1...
+Run output will be captured here: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/synth_1/runme.log
+[Thu May 22 13:12:57 2025] Launched impl_1...
+Run output will be captured here: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/utils_1/imports/synth_1/TopLevel.dcp with file C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/synth_1/TopLevel.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu May 22 13:29:14 2025] Launched synth_1...
+Run output will be captured here: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/synth_1/runme.log
+[Thu May 22 13:29:14 2025] Launched impl_1...
+Run output will be captured here: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/utils_1/imports/synth_1/TopLevel.dcp with file C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/synth_1/TopLevel.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu May 22 13:35:43 2025] Launched synth_1...
+Run output will be captured here: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/synth_1/runme.log
+[Thu May 22 13:35:43 2025] Launched impl_1...
+Run output will be captured here: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.runs/impl_1/runme.log
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed May 28 12:10:42 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu May 22 14:24:37 2025...

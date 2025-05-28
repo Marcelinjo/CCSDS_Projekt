@@ -45,32 +45,35 @@ begin
     fifo_full  <= '1' when (wr_ptr + 1) mod 4096 = rd_ptr else '0';
 
     -- Datenerfassung & Paketaufbau
-    process(clk)
-    begin
-        if rising_edge(clk) then
-            if rst = '1' then
-                header_index <= 0;
-                capturing <= '0';
-                pkt_valid <= '0';
-                byte_count <= 0;
-                wr_ptr <= 0;
-            elsif data_valid = '1' then
+process(clk)
+begin
+    if rising_edge(clk) then
+        if rst = '1' then
+            header_index <= 0;
+            capturing <= '0';
+            pkt_valid <= '0';
+            pkt_ready <= '0';
+            byte_count <= 0;
+            wr_ptr <= 0;
+            rd_ptr <= 0;
+        else
+            -- Empfangslogik
+            if data_valid = '1' then
                 if capturing = '0' then
-                    -- Headeraufbau (6 Bytes CCSDS Primary Header)
                     header_buf(47 - header_index*8 downto 40 - header_index*8) <= data_in;
                     header_index <= header_index + 1;
+
                     if header_index = 5 then
                         capturing <= '1';
                         header_index <= 0;
 
-                        -- Paketlänge (CCSDS gibt Packet Length = N - 1)
                         pkt_length <= to_integer(unsigned(header_buf(15 downto 0))) + 7;
                         byte_count <= 6;
 
-                        -- Speichere Header in FIFO
                         for i in 0 to 5 loop
                             fifo_mem((wr_ptr + i) mod 4096) <= header_buf(47 - i*8 downto 40 - i*8);
                         end loop;
+
                         wr_ptr <= (wr_ptr + 6) mod 4096;
                     end if;
 
@@ -86,17 +89,9 @@ begin
                     end if;
                 end if;
             end if;
-        end if;
-    end process;
 
-    -- Paketbereitstellung zum Lesen
-    process(clk)
-    begin
-        if rising_edge(clk) then
-            if rst = '1' then
-                rd_ptr <= 0;
-                pkt_ready <= '0';
-            elsif pkt_valid = '1' then
+            -- Leselogik
+            if pkt_valid = '1' then
                 pkt_ready <= '1';
                 pkt_valid <= '0';
             elsif read_en = '1' and pkt_ready = '1' then
@@ -107,6 +102,8 @@ begin
                 end if;
             end if;
         end if;
-    end process;
+    end if;
+end process;
+
 
 end Behavioral;
