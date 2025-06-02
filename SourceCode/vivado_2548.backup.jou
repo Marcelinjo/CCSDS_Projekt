@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu May 22 13:07:55 2025
+# Process ID: 2548
+# Current directory: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10416 C:\Users\marci\Desktop\CCSDS_Projekt\SourceCode\CCSDS_Stack_Projekt.xpr
+# Log file: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/vivado.log
+# Journal file: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode\vivado.jou
+# Running On: DESKTOP-HT5OLI6, OS: Windows, CPU Frequency: 3400 MHz, CPU Physical cores: 12, Host memory: 17128 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/constrs_1
+file mkdir C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/constrs_1/new
+close [ open C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/constrs_1/new/Ports.xdc w ]
+add_files -fileset constrs_1 C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/constrs_1/new/Ports.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
