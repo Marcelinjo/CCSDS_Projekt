@@ -3,13 +3,25 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon Jun  2 16:04:05 2025
-# Process ID: 5164
+# Start of session at: Wed May 28 12:32:04 2025
+# Process ID: 4780
 # Current directory: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14400 C:\Users\marci\Desktop\CCSDS_Projekt\SourceCode\CCSDS_Stack_Projekt.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17096 C:\Users\marci\Desktop\CCSDS_Projekt\SourceCode\CCSDS_Stack_Projekt.xpr
 # Log file: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/vivado.log
 # Journal file: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode\vivado.jou
 # Running On: DESKTOP-HT5OLI6, OS: Windows, CPU Frequency: 3400 MHz, CPU Physical cores: 12, Host memory: 17128 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+update_compile_order -fileset sources_1
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+launch_simulation
+source TopLevel.tcl
+close_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run impl_1
+reset_run synth_1

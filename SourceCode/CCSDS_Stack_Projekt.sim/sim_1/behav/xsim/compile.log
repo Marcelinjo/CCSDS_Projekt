@@ -1,19 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/ASM.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'ASM'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/FECGenerator.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'FECGenerator'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/FIFO_Stack.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'FIFO_Stack'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/Header_Generator.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'HeaderGenerator'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/OCFGenerator.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'OCFGenerator'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/PacketTypes.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/PacketSequencer.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'PacketSequencer'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TM_GEN_TestDriver.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TM_GEN_TestDriver'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TM_Generator.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TM_Generator'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'TopLevel'

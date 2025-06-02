@@ -26,18 +26,6 @@ architecture Behavioral of TopLevel is
         );
     end component;
     
-    -- Komponentendeklaration für TM_GEN_TestDriver
-    component TM_GEN_TestDriver
-        Port (
-            clk         : in  STD_LOGIC;
-            buffer_full : in  STD_LOGIC;
-            buffer_out  : in  STD_LOGIC_VECTOR(16399 downto 0);
-            reset       : out STD_LOGIC;
-            start       : out STD_LOGIC;
-            data_in     : out STD_LOGIC_VECTOR(7 downto 0);
-            data_valid  : out STD_LOGIC
-        );
-    end component;
 
 
     -- Interne Signale für TM_Generator
@@ -62,18 +50,7 @@ begin
         buffer_out  => buffer_out,
         buffer_full => buffer_full
     );
-    -- Instanz von TM_Generator_TestDriver
-    U_TestDriver: TM_GEN_TestDriver
-    port map (
-        clk         => clk,
-        buffer_full => buffer_full,
-        buffer_out  => buffer_out,
-        reset       => reset,
-        start       => start,
-        data_in     => data_in,
-        data_valid  => data_valid
-    );
-    
+
     dummy_out <= buffer_out(0);  -- Um die Optimierung zu vermeiden
 
 
