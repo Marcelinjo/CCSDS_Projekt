@@ -1,7 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-use work.PacketTypes.all;
 
 entity PacketSequencer is
     Port (
@@ -15,8 +14,8 @@ entity PacketSequencer is
         pkt_ready      : in  STD_LOGIC;
         read_en        : out STD_LOGIC;
 
-        -- Ausgabe: vollständiger Frame
-        frame_buffer   : out frame_t;
+        -- Ausgabe: vollständige Payload
+        frame_buffer   : out STD_LOGIC_VECTOR(15759 downto 0); -- 1970 Bytes * 8 = 15760 Bits
         frame_ready    : out STD_LOGIC
     );
 end PacketSequencer;
@@ -26,8 +25,8 @@ architecture Behavioral of PacketSequencer is
     type state_t is (IDLE, READING, DONE);
     signal state : state_t := IDLE;
 
-    signal internal_buffer : frame_t;
-    signal write_index     : INTEGER range 0 to 2033 := 0;
+    signal internal_buffer : STD_LOGIC_VECTOR(15759 downto 0);
+    signal write_index     : INTEGER range 0 to 1969  := 0;
 
 begin
 
@@ -42,6 +41,7 @@ begin
             case state is
                 when IDLE =>
                     frame_ready <= '0';
+                    write_index <= 0;
                     if seq_enable = '1' and pkt_ready = '1' and fifo_empty = '0' then
                         read_en <= '1';
                         state <= READING;
@@ -50,10 +50,12 @@ begin
                     end if;
 
                 when READING =>
-                    internal_buffer(write_index) <= data_out;
+                    -- Daten in den internen Buffer schreiben
+                    internal_buffer((write_index + 1) * 8 - 1 downto write_index * 8) <= data_out;
                     write_index <= write_index + 1;
 
-                    if write_index = 2033 or fifo_empty = '1' then
+                    -- Weiter lesen, solange Platz im Buffer und FIFO nicht leer
+                    if write_index = 1969 or fifo_empty = '1' then
                         read_en <= '0';
                         state <= DONE;
                     else
@@ -63,7 +65,7 @@ begin
                 when DONE =>
                     frame_ready <= '1';
                     read_en <= '0';
-                    -- bleibe in DONE bis Reset
+                    -- bleibt im DONE bis Reset
             end case;
         end if;
     end process;

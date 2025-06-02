@@ -165,3 +165,35 @@ collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation
 expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10); // E
 collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10); // E
 // TclEventType: FILE_SET_CHANGE
+// Elapsed time: 112 seconds
+selectCodeEditor("FIFO_Stack.vhd", 449, 473); // ad
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd), Header_Inst : HeaderGenerator(Behavioral) (Header_Generator.vhd)]", 4, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd), Header_Inst : HeaderGenerator(Behavioral) (Header_Generator.vhd)]", 4, false, false, false, false, false, true); // E - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("Header_Generator.vhd", 880, 295); // ad
+selectCodeEditor("Header_Generator.vhd", 244, 296); // ad
+selectCodeEditor("Header_Generator.vhd", 773, 297); // ad
+selectCodeEditor("Header_Generator.vhd", 526, 515); // ad
+selectCodeEditor("Header_Generator.vhd", 741, 443); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("Header_Generator.vhd", 234, 250); // ad
+selectCodeEditor("Header_Generator.vhd", 241, 267); // ad
+selectCodeEditor("Header_Generator.vhd", 244, 246); // ad
+selectCodeEditor("Header_Generator.vhd", 247, 262); // ad
+// Elapsed time: 27 seconds
+selectCodeEditor("Header_Generator.vhd", 422, 300); // ad
+selectCodeEditor("Header_Generator.vhd", 599, 301); // ad
+selectCodeEditor("Header_Generator.vhd", 443, 299); // ad
+// Elapsed time: 38 seconds
+selectCodeEditor("Header_Generator.vhd", 323, 315); // ad
+// Elapsed time: 18 seconds
+selectCodeEditor("Header_Generator.vhd", 404, 202); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 07m:44s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 07m:46s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 07m:48s
+// Elapsed Time for: 'L.f': 07m:50s

@@ -21,8 +21,10 @@ architecture Behavioral of TopLevel is
             start       : in  STD_LOGIC;
             data_in     : in  STD_LOGIC_VECTOR(7 downto 0);
             data_valid  : in  STD_LOGIC;
+            secondary_Header     : in  STD_LOGIC_VECTOR(63 downto 0);
             buffer_out  : out STD_LOGIC_VECTOR(16399 downto 0);
             buffer_full : out STD_LOGIC
+            
         );
     end component;
     
@@ -33,6 +35,8 @@ architecture Behavioral of TopLevel is
     signal start       : STD_LOGIC := '0';
     signal buffer_out  : STD_LOGIC_VECTOR(16399 downto 0);
     signal buffer_full : STD_LOGIC;
+    
+    signal secondary_Header     : STD_LOGIC_VECTOR(63 downto 0):= x"AAAAAAAA";
 
     signal data_in    : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
     signal data_valid : STD_LOGIC := '0';
@@ -47,6 +51,7 @@ begin
         start       => start,
         data_in     => data_in,
         data_valid  => data_valid,
+        secondary_Header => secondary_Header,
         buffer_out  => buffer_out,
         buffer_full => buffer_full
     );

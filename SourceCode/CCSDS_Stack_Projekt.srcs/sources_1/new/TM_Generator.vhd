@@ -1,13 +1,15 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-use work.PacketTypes.all;
+
 
 entity TM_Generator is
     Port (
         clk         : in  STD_LOGIC;
         reset       : in  STD_LOGIC;
         start       : in  STD_LOGIC;
+        
+        secondary_Header     : in  STD_LOGIC_VECTOR(63 downto 0);
 
         -- FIFO Eingabe von Top-Level
         data_in     : in  STD_LOGIC_VECTOR(7 downto 0);
@@ -33,7 +35,7 @@ architecture Behavioral of TM_Generator is
     signal fifo_full_int  : STD_LOGIC;
 
     -- Frame-Daten
-    signal frame_buffer   : frame_t;
+    signal frame_buffer   : STD_LOGIC_VECTOR(16399 downto 0);
     signal frame_ready    : STD_LOGIC;
 
     -- Interner Buffer
@@ -128,29 +130,42 @@ begin
 
             if writing = '1' and frame_ready = '1' then
                 case write_index is
+
                     -- ASM (4 Byte)
                     when 0 to 3 =>
-                        buffer_temp(16399 - write_index*8 downto 16392 - write_index*8) <= asm_Field(31 - write_index*8 downto 24 - write_index*8);
-
-                    -- Header (6 Byte)
+                        buffer_temp(16399 - write_index*8 downto 16392 - write_index*8) <= 
+                            asm_Field(31 - write_index*8 downto 24 - write_index*8);
+                
+                    -- Primary Header (6 Byte)
                     when 4 to 9 =>
-                        buffer_temp(16399 - write_index*8 downto 16392 - write_index*8) <= header_data(47 - (write_index - 4)*8 downto 40 - (write_index - 4)*8);
-
-                    -- Frame-Daten (2040 Byte)
-                    when 10 to 2043 =>
-                        buffer_temp(16399 - write_index*8 downto 16392 - write_index*8) <= frame_buffer(write_index - 10);
-
+                        buffer_temp(16399 - write_index*8 downto 16392 - write_index*8) <= 
+                            header_data(47 - (write_index - 4)*8 downto 40 - (write_index - 4)*8);
+                
+                    -- Secondary Header (64 Byte)
+                    when 10 to 73 =>
+                        buffer_temp(16399 - write_index*8 downto 16392 - write_index*8) <= 
+                            secondary_Header(63 - (write_index - 10)*8 downto 56 - (write_index - 10)*8);
+                
+                    -- Frame-Daten (1970 Byte)
+                    when 74 to 2043 =>
+                        buffer_temp(16399 - write_index*8 downto 16392 - write_index*8) <= 
+                            frame_buffer(15759 - (write_index - 74)*8 downto 15752 - (write_index - 74)*8);
+                
                     -- OCF (4 Byte)
                     when 2044 to 2047 =>
-                        buffer_temp(16399 - write_index*8 downto 16392 - write_index*8) <= ocf_data(31 - (write_index - 2044)*8 downto 24 - (write_index - 2044)*8);
+                        buffer_temp(16399 - write_index*8 downto 16392 - write_index*8) <= 
+                            ocf_data(31 - (write_index - 2044)*8 downto 24 - (write_index - 2044)*8);
                 
                     -- FEC (2 Byte)
                     when 2048 to 2049 =>
-                        buffer_temp(16399 - write_index*8 downto 16392 - write_index*8) <= fec_data(15 - (write_index - 2048)*8 downto 8 - (write_index - 2048)*8);
+                        buffer_temp(16399 - write_index*8 downto 16392 - write_index*8) <= 
+                            fec_data(15 - (write_index - 2048)*8 downto 8 - (write_index - 2048)*8);
                 
                     when others =>
                         null;
+                
                 end case;
+
 
                 -- Index erhöhen
                 if write_index < 2049 then
