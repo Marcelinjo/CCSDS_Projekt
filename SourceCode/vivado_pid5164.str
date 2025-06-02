@@ -197,3 +197,465 @@ selectCodeEditor("Header_Generator.vhd", 404, 202); // ad
 // Tcl Message: update_compile_order -fileset sources_1 
 // Elapsed Time for: 'L.f': 07m:48s
 // Elapsed Time for: 'L.f': 07m:50s
+// Elapsed time: 53 seconds
+selectCodeEditor("Header_Generator.vhd", 398, 477); // ad
+// Elapsed time: 84 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIFO_Stack.vhd", 1); // o
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd)]", 3, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd)]", 3, true, false, false, false, false, true); // E - Double Click - Node
+selectCodeEditor("TM_Generator.vhd", 146, 313); // ad
+selectCodeEditor("TM_Generator.vhd", 146, 313); // ad
+selectCodeEditor("TM_Generator.vhd", 146, 313, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("TM_Generator.vhd", 122, 399); // ad
+selectCodeEditor("TM_Generator.vhd", 122, 399, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("TM_Generator.vhd", 223, 404); // ad
+selectCodeEditor("TM_Generator.vhd", 223, 404, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("TM_Generator.vhd", 306, 417); // ad
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd)]", 3); // E
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd), Packet_Inst : PacketSequencer(Behavioral) (PacketSequencer.vhd)]", 6, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd), Packet_Inst : PacketSequencer(Behavioral) (PacketSequencer.vhd)]", 6, false, false, false, false, false, true); // E - Double Click
+selectCodeEditor("PacketSequencer.vhd", 223, 314); // ad
+selectCodeEditor("PacketSequencer.vhd", 223, 314, false, false, false, false, true); // ad - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TM_Generator.vhd", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Header_Generator.vhd", 2); // o
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIFO_Stack.vhd", 1); // o
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd)]", 3, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd)]", 3, true, false, false, false, false, true); // E - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 2, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 2, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 2, true, false, false, false, false, true); // E - Double Click - Node
+selectCodeEditor("TopLevel.vhd", 211, 196); // ad
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PacketSequencer.vhd", 4); // o
+selectCodeEditor("PacketSequencer.vhd", 328, 333); // ad
+selectCodeEditor("PacketSequencer.vhd", 251, 313); // ad
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+selectCodeEditor("PacketSequencer.vhd", 404, 382); // ad
+selectCodeEditor("PacketSequencer.vhd", 202, 331); // ad
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+selectCodeEditor("PacketSequencer.vhd", 450, 400); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 11m:40s
+selectCodeEditor("PacketSequencer.vhd", 201, 59); // ad
+// Elapsed Time for: 'L.f': 11m:42s
+selectCodeEditor("PacketSequencer.vhd", 227, 49); // ad
+selectCodeEditor("PacketSequencer.vhd", 168, 63); // ad
+selectCodeEditor("PacketSequencer.vhd", 173, 62); // ad
+// Elapsed time: 470 seconds
+selectCodeEditor("PacketSequencer.vhd", 275, 267); // ad
+selectCodeEditor("PacketSequencer.vhd", 273, 309); // ad
+selectCodeEditor("PacketSequencer.vhd", 272, 268); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("PacketSequencer.vhd", 140, 439); // ad
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+selectCodeEditor("PacketSequencer.vhd", 387, 455); // ad
+typeControlKey(null, null, 'z');
+selectCodeEditor("PacketSequencer.vhd", 165, 334); // ad
+selectCodeEditor("PacketSequencer.vhd", 165, 334, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'c'); // ad
+selectCodeEditor("PacketSequencer.vhd", 142, 385); // ad
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+selectCodeEditor("PacketSequencer.vhd", 251, 384); // ad
+selectCodeEditor("PacketSequencer.vhd", 314, 462); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("PacketSequencer.vhd", 359, 340); // ad
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'c'); // ad
+selectCodeEditor("PacketSequencer.vhd", 265, 462); // ad
+selectCodeEditor("PacketSequencer.vhd", 306, 365); // ad
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'c'); // ad
+// Elapsed time: 91 seconds
+selectCodeEditor("PacketSequencer.vhd", 273, 371); // ad
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 21m:58s
+// Elapsed Time for: 'L.f': 22m:00s
+// Elapsed time: 25 seconds
+selectCodeEditor("PacketSequencer.vhd", 427, 361); // ad
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 2); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd)]", 3); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd), Packet_Inst : PacketSequencer(Behavioral) (PacketSequencer.vhd)]", 6, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd)]", 3, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd)]", 3, true, false, false, false, false, true); // E - Double Click - Node
+selectCodeEditor("TM_Generator.vhd", 176, 59); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PacketSequencer.vhd", 4); // o
+selectCodeEditor("PacketSequencer.vhd", 206, 296); // ad
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'c'); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TM_Generator.vhd", 3); // o
+selectCodeEditor("TM_Generator.vhd", 196, 298); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'v'); // ad
+selectCodeEditor("TM_Generator.vhd", 399, 331, false, true, false, false, false); // ad - Control Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 22m:48s
+// Elapsed Time for: 'L.f': 22m:50s
+// Elapsed time: 17 seconds
+selectCodeEditor("TM_Generator.vhd", 372, 436); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+// Elapsed time: 22 seconds
+selectCodeEditor("TM_Generator.vhd", 210, 432); // ad
+selectCodeEditor("TM_Generator.vhd", 230, 403); // ad
+selectCodeEditor("TM_Generator.vhd", 230, 403, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("TM_Generator.vhd", 127, 209); // ad
+selectCodeEditor("TM_Generator.vhd", 127, 209, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+selectCodeEditor("TM_Generator.vhd", 240, 348); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+// Elapsed time: 36 seconds
+selectCodeEditor("TM_Generator.vhd", 153, 430); // ad
+selectCodeEditor("TM_Generator.vhd", 136, 213); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+// Elapsed time: 20 seconds
+selectCodeEditor("TM_Generator.vhd", 292, 275); // ad
+selectCodeEditor("TM_Generator.vhd", 166, 244); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'v'); // ad
+selectCodeEditor("TM_Generator.vhd", 317, 375); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 24m:54s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd)]", 3); // E
+// Elapsed Time for: 'L.f': 24m:56s
+// Elapsed time: 12 seconds
+selectCodeEditor("TM_Generator.vhd", 227, 304); // ad
+selectCodeEditor("TM_Generator.vhd", 162, 304); // ad
+selectCodeEditor("TM_Generator.vhd", 156, 307); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("TM_Generator.vhd", 141, 245); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+selectCodeEditor("TM_Generator.vhd", 188, 309); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'v'); // ad
+selectCodeEditor("TM_Generator.vhd", 161, 315); // ad
+selectCodeEditor("TM_Generator.vhd", 155, 317); // ad
+selectCodeEditor("TM_Generator.vhd", 163, 314); // ad
+selectCodeEditor("TM_Generator.vhd", 296, 315); // ad
+selectCodeEditor("TM_Generator.vhd", 291, 316); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("TM_Generator.vhd", 248, 333); // ad
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd), ASM_Inst : ASM(Behavioral) (ASM.vhd)]", 4, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd), ASM_Inst : ASM(Behavioral) (ASM.vhd)]", 4, false, false, false, false, false, true); // E - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd), OCF_Inst : OCFGenerator(Behavioral) (OCFGenerator.vhd)]", 8, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd), OCF_Inst : OCFGenerator(Behavioral) (OCFGenerator.vhd)]", 8, false, false, false, false, false, true); // E - Double Click
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "SecondaryHeader"); // Q
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Create Source File"); // m
+selectButton("CANCEL", "Cancel"); // JButton
+// 'f' command handler elapsed time: 13 seconds
+dismissDialog("Add Sources"); // c
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Header_Generator.vhd", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIFO_Stack.vhd", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TM_Generator.vhd", 3); // o
+selectCodeEditor("TM_Generator.vhd", 386, 210); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+selectCodeEditor("TM_Generator.vhd", 275, 251); // ad
+selectCodeEditor("TM_Generator.vhd", 278, 167); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'v'); // ad
+selectCodeEditor("TM_Generator.vhd", 62, 199); // ad
+selectCodeEditor("TM_Generator.vhd", 78, 193); // ad
+selectCodeEditor("TM_Generator.vhd", 78, 193, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("TM_Generator.vhd", 371, 196); // ad
+selectCodeEditor("TM_Generator.vhd", 461, 263); // ad
+selectCodeEditor("TM_Generator.vhd", 489, 241); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TM_Generator.vhd", 119, 199); // ad
+selectCodeEditor("TM_Generator.vhd", 119, 199, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+// Elapsed Time for: 'L.f': 26m:44s
+// Elapsed Time for: 'L.f': 26m:46s
+selectCodeEditor("TM_Generator.vhd", 173, 263); // ad
+selectCodeEditor("TM_Generator.vhd", 218, 261); // ad
+selectCodeEditor("TM_Generator.vhd", 260, 282); // ad
+selectCodeEditor("TM_Generator.vhd", 167, 213); // ad
+selectCodeEditor("TM_Generator.vhd", 571, 304); // ad
+selectCodeEditor("TM_Generator.vhd", 105, 211); // ad
+selectCodeEditor("TM_Generator.vhd", 818, 271); // ad
+selectCodeEditor("TM_Generator.vhd", 1028, 213); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+selectCodeEditor("TM_Generator.vhd", 198, 281); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'v'); // ad
+// Elapsed time: 73 seconds
+selectCodeEditor("TM_Generator.vhd", 3, 95); // ad
+selectCodeEditor("TM_Generator.vhd", 22, 116); // ad
+selectCodeEditor("TM_Generator.vhd", 2, 100); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+// Elapsed time: 29 seconds
+selectCodeEditor("TM_Generator.vhd", 283, 334); // ad
+selectCodeEditor("TM_Generator.vhd", 27, 111); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+// Elapsed time: 21 seconds
+selectCodeEditor("TM_Generator.vhd", 426, 65); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PacketSequencer.vhd", 4); // o
+selectCodeEditor("PacketSequencer.vhd", 369, 379); // ad
+// HMemoryUtils.trashcanNow. Engine heap size: 1,121 MB. GUI used memory: 77 MB. Current time: 6/2/25, 4:34:55 PM CEST
+// Elapsed time: 84 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TM_Generator.vhd", 3); // o
+// Elapsed time: 30 seconds
+selectCodeEditor("TM_Generator.vhd", 511, 379); // ad
+selectCodeEditor("TM_Generator.vhd", 443, 349); // ad
+selectCodeEditor("TM_Generator.vhd", 402, 386); // ad
+selectCodeEditor("TM_Generator.vhd", 430, 414); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 31m:43s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PacketSequencer.vhd", 4); // o
+// Elapsed Time for: 'L.f': 31m:45s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TM_Generator.vhd", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PacketSequencer.vhd", 4); // o
+selectCodeEditor("PacketSequencer.vhd", 405, 471); // ad
+selectCodeEditor("PacketSequencer.vhd", 349, 382); // ad
+selectCodeEditor("PacketSequencer.vhd", 396, 416); // ad
+selectCodeEditor("PacketSequencer.vhd", 428, 433); // ad
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'c'); // ad
+// Elapsed time: 49 seconds
+selectCodeEditor("PacketSequencer.vhd", 479, 89); // ad
+selectCodeEditor("PacketSequencer.vhd", 458, 296); // ad
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+selectCodeEditor("PacketSequencer.vhd", 352, 301); // ad
+selectCodeEditor("PacketSequencer.vhd", 352, 301, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+selectCodeEditor("PacketSequencer.vhd", 489, 295); // ad
+selectCodeEditor("PacketSequencer.vhd", 473, 410); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 33m:03s
+// Elapsed Time for: 'L.f': 33m:05s
+selectCodeEditor("PacketSequencer.vhd", 340, 142); // ad
+selectCodeEditor("PacketSequencer.vhd", 340, 142, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'c'); // ad
+selectCodeEditor("PacketSequencer.vhd", 341, 311); // ad
+selectCodeEditor("PacketSequencer.vhd", 342, 311, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+selectCodeEditor("PacketSequencer.vhd", 353, 318); // ad
+selectCodeEditor("PacketSequencer.vhd", 353, 318, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("PacketSequencer.vhd", 271, 263); // ad
+selectCodeEditor("PacketSequencer.vhd", 271, 263, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("PacketSequencer.vhd", 277, 314); // ad
+selectCodeEditor("PacketSequencer.vhd", 278, 314, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+typeControlKey(null, null, 'z');
+selectCodeEditor("PacketSequencer.vhd", 272, 314); // ad
+selectCodeEditor("PacketSequencer.vhd", 272, 314, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 33m:29s
+// Elapsed Time for: 'L.f': 33m:31s
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TM_Generator.vhd", 3); // o
+// Elapsed time: 16 seconds
+selectCodeEditor("TM_Generator.vhd", 278, 367); // ad
+selectCodeEditor("TM_Generator.vhd", 361, 380); // ad
+selectCodeEditor("TM_Generator.vhd", 117, 181); // ad
+selectCodeEditor("TM_Generator.vhd", 81, 129); // ad
+selectCodeEditor("TM_Generator.vhd", 141, 476); // ad
+selectCodeEditor("TM_Generator.vhd", 197, 250); // ad
+selectCodeEditor("TM_Generator.vhd", 73, 198); // ad
+selectCodeEditor("TM_Generator.vhd", 83, 179); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+// Elapsed time: 26 seconds
+selectCodeEditor("TM_Generator.vhd", 254, 291); // ad
+selectCodeEditor("TM_Generator.vhd", 369, 417); // ad
+selectCodeEditor("TM_Generator.vhd", 190, 279); // ad
+selectCodeEditor("TM_Generator.vhd", 239, 280); // ad
+selectCodeEditor("TM_Generator.vhd", 198, 349); // ad
+selectCodeEditor("TM_Generator.vhd", 250, 346); // ad
+selectCodeEditor("TM_Generator.vhd", 197, 421); // ad
+selectCodeEditor("TM_Generator.vhd", 253, 415); // ad
+selectCodeEditor("TM_Generator.vhd", 275, 466); // ad
+// Elapsed time: 73 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PacketSequencer.vhd", 4); // o
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TM_Generator.vhd", 3); // o
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PacketSequencer.vhd", 4); // o
+selectCodeEditor("PacketSequencer.vhd", 375, 332); // ad
+// Elapsed time: 44 seconds
+selectCodeEditor("PacketSequencer.vhd", 340, 301); // ad
+selectCodeEditor("PacketSequencer.vhd", 340, 301, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+selectCodeEditor("PacketSequencer.vhd", 339, 470); // ad
+selectCodeEditor("PacketSequencer.vhd", 339, 470, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+selectCodeEditor("PacketSequencer.vhd", 281, 366); // ad
+selectCodeEditor("PacketSequencer.vhd", 367, 400); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TM_Generator.vhd", 3); // o
+// Elapsed Time for: 'L.f': 38m:43s
+// Elapsed Time for: 'L.f': 38m:45s
+// Elapsed time: 11 seconds
+selectCodeEditor("TM_Generator.vhd", 385, 308); // ad
+selectCodeEditor("TM_Generator.vhd", 280, 313); // ad
+// Elapsed time: 20 seconds
+selectCodeEditor("TM_Generator.vhd", 132, 210); // ad
+selectCodeEditor("TM_Generator.vhd", 132, 210, false, false, false, false, true); // ad - Double Click
+// Elapsed time: 32 seconds
+selectCodeEditor("TM_Generator.vhd", 386, 399); // ad
+// Elapsed time: 20 seconds
+selectCodeEditor("TM_Generator.vhd", 240, 231); // ad
+selectCodeEditor("TM_Generator.vhd", 241, 235); // ad
+// Elapsed time: 25 seconds
+selectCodeEditor("TM_Generator.vhd", 176, 352); // ad
+selectCodeEditor("TM_Generator.vhd", 334, 341); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+// Elapsed time: 37 seconds
+selectCodeEditor("TM_Generator.vhd", 287, 367); // ad
+selectCodeEditor("TM_Generator.vhd", 293, 377); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("TM_Generator.vhd", 225, 280); // ad
+selectCodeEditor("TM_Generator.vhd", 205, 347); // ad
+// Elapsed time: 70 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PacketSequencer.vhd", 4); // o
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TM_Generator.vhd", 3); // o
+// Elapsed time: 17 seconds
+selectCodeEditor("TM_Generator.vhd", 333, 463); // ad
+selectCodeEditor("TM_Generator.vhd", 110, 97); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'v'); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 43m:23s
+// Elapsed Time for: 'L.f': 43m:25s
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+// Elapsed time: 104 seconds
+selectCodeEditor("TM_Generator.vhd", 448, 380); // ad
+// Elapsed time: 83 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PacketSequencer.vhd", 4); // o
+selectCodeEditor("PacketSequencer.vhd", 372, 319); // ad
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'c'); // ad
+selectCodeEditor("PacketSequencer.vhd", 453, 313); // ad
+selectCodeEditor("PacketSequencer.vhd", 447, 291); // ad
+// Elapsed time: 19 seconds
+selectCodeEditor("PacketSequencer.vhd", 356, 297); // ad
+// Elapsed time: 14 seconds
+selectCodeEditor("PacketSequencer.vhd", 525, 266); // ad
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 47m:19s
+// [GUI Memory]: 157 MB (+24kb) [00:47:47]
+// Elapsed Time for: 'L.f': 47m:21s
+selectCodeEditor("PacketSequencer.vhd", 361, 161); // ad
+selectCodeEditor("PacketSequencer.vhd", 349, 161); // ad
+selectCodeEditor("PacketSequencer.vhd", 349, 161, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'c'); // ad
+selectCodeEditor("PacketSequencer.vhd", 350, 334); // ad
+selectCodeEditor("PacketSequencer.vhd", 350, 334, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+selectCodeEditor("PacketSequencer.vhd", 347, 354); // ad
+selectCodeEditor("PacketSequencer.vhd", 348, 354, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("PacketSequencer.vhd", 351, 342); // ad
+selectCodeEditor("PacketSequencer.vhd", 351, 342, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+selectCodeEditor("PacketSequencer.vhd", 274, 279); // ad
+selectCodeEditor("PacketSequencer.vhd", 274, 279, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "PacketSequencer.vhd", 'v'); // ad
+selectCodeEditor("PacketSequencer.vhd", 390, 440); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 47m:47s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TM_Generator.vhd", 3); // o
+// Elapsed Time for: 'L.f': 47m:49s
+selectCodeEditor("TM_Generator.vhd", 84, 211); // ad
+selectCodeEditor("TM_Generator.vhd", 119, 245); // ad
+selectCodeEditor("TM_Generator.vhd", 112, 231); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+// Elapsed time: 24 seconds
+selectCodeEditor("TM_Generator.vhd", 196, 364); // ad
+selectCodeEditor("TM_Generator.vhd", 193, 368, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("TM_Generator.vhd", 192, 320); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'v'); // ad
+selectCodeEditor("TM_Generator.vhd", 79, 456); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("TM_Generator.vhd", 204, 464); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // j
+// Elapsed Time for: 'L.f': 48m:49s
+// Elapsed Time for: 'L.f': 48m:51s
+// Elapsed time: 21 seconds
+selectCodeEditor("TM_Generator.vhd", 236, 208); // ad
+selectCodeEditor("TM_Generator.vhd", 236, 208, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("TM_Generator.vhd", 258, 211); // ad
+selectCodeEditor("TM_Generator.vhd", 56, 199); // ad
+typeControlKey((HResource) null, "TM_Generator.vhd", 'c'); // ad
+selectCodeEditor("TM_Generator.vhd", 499, 191); // ad
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 2, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 2, true, false, false, false, false, true); // E - Double Click - Node
+selectCodeEditor("TopLevel.vhd", 425, 267); // ad
+selectCodeEditor("TopLevel.vhd", 373, 294); // ad
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ad
+// Elapsed time: 13 seconds
+typeControlKey(null, null, 'z');
+selectCodeEditor("TopLevel.vhd", 443, 281); // ad
+selectCodeEditor("TopLevel.vhd", 475, 257); // ad
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 49m:53s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PacketSequencer.vhd", 4); // o
+// Elapsed Time for: 'L.f': 49m:55s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopLevel.vhd", 5); // o
+selectCodeEditor("TopLevel.vhd", 283, 300); // ad
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ad
+selectCodeEditor("TopLevel.vhd", 394, 359); // ad
+selectCodeEditor("TopLevel.vhd", 259, 235); // ad
+selectCodeEditor("TopLevel.vhd", 245, 162); // ad
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ad
+selectCodeEditor("TopLevel.vhd", 442, 233); // ad
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ad
+selectCodeEditor("TopLevel.vhd", 132, 133); // ad
+selectCodeEditor("TopLevel.vhd", 133, 133, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("TopLevel.vhd", 271, 244); // ad
+selectCodeEditor("TopLevel.vhd", 175, 126); // ad
+selectCodeEditor("TopLevel.vhd", 175, 126, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("TopLevel.vhd", 194, 125); // ad
+selectCodeEditor("TopLevel.vhd", 473, 129); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("TopLevel.vhd", 581, 211); // ad
+selectCodeEditor("TopLevel.vhd", 484, 128); // ad
+selectCodeEditor("TopLevel.vhd", 538, 129); // ad
+selectCodeEditor("TopLevel.vhd", 577, 183); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ASM.vhd", 6); // o
+selectCodeEditor("ASM.vhd", 240, 282); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OCFGenerator.vhd", 7); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ASM.vhd", 6); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Header_Generator.vhd", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIFO_Stack.vhd", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopLevel.vhd", 5); // o
+selectCodeEditor("TopLevel.vhd", 474, 126); // ad
+selectCodeEditor("TopLevel.vhd", 541, 123); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 51m:05s
+// Elapsed Time for: 'L.f': 51m:07s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OCFGenerator.vhd", 7); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ASM.vhd", 6); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopLevel.vhd", 5); // o
+selectCodeEditor("TopLevel.vhd", 465, 131); // ad
+selectCodeEditor("TopLevel.vhd", 113, 128); // ad
+selectCodeEditor("TopLevel.vhd", 113, 128, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ad
+selectCodeEditor("TopLevel.vhd", 249, 366); // ad
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ad
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 51m:35s
+// Elapsed Time for: 'L.f': 51m:37s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 2); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd)]", 3); // E
+selectCodeEditor("TopLevel.vhd", 610, 241); // ad

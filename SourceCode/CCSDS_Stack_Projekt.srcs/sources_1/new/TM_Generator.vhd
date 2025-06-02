@@ -35,7 +35,7 @@ architecture Behavioral of TM_Generator is
     signal fifo_full_int  : STD_LOGIC;
 
     -- Frame-Daten
-    signal frame_buffer   : STD_LOGIC_VECTOR(16399 downto 0);
+    signal frame_buffer   : STD_LOGIC_VECTOR(15759 downto 0);
     signal frame_ready    : STD_LOGIC;
 
     -- Interner Buffer

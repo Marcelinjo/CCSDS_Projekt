@@ -36,7 +36,7 @@ architecture Behavioral of TopLevel is
     signal buffer_out  : STD_LOGIC_VECTOR(16399 downto 0);
     signal buffer_full : STD_LOGIC;
     
-    signal secondary_Header     : STD_LOGIC_VECTOR(63 downto 0):= x"AAAAAAAA";
+    signal secondary_Header     : STD_LOGIC_VECTOR(63 downto 0):= x"0123456789ABCDEF";
 
     signal data_in    : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
     signal data_valid : STD_LOGIC := '0';
