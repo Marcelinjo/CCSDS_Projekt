@@ -13,3 +13,4 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.xpr
+update_compile_order -fileset sources_1

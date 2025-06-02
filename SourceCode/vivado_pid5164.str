@@ -143,3 +143,25 @@ Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // [Engine Memory]: 1,056 MB (+956004kb) [00:00:26]
 // WARNING: HEventQueue.dispatchEvent() is taking  2440 ms.
 // Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'Z:/Xilinx/Vivado/2023.1/data/ip'. 
+// Project name: CCSDS_Stack_Projekt; location: C:/Users/marci/Desktop/CCSDS_Projekt/SourceCode; part: xc7z020clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 1442.125 ; gain = 226.617 
+// [GUI Memory]: 129 MB (+5424kb) [00:00:28]
+dismissDialog("Open Project"); // bq
+// [GUI Memory]: 149 MB (+14859kb) [00:00:31]
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,108 MB. GUI used memory: 71 MB. Current time: 6/2/25, 4:04:55 PM CEST
+// [Engine Memory]: 1,111 MB (+2332kb) [00:01:10]
+// Elapsed time: 181 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd)]", 2); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd), FEC_Inst : FECGenerator(Behavioral) (FECGenerator.vhd)]", 8, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), U_TM_Generator : TM_Generator(Behavioral) (TM_Generator.vhd), FIFO_Inst : FIFO_Stack(Behavioral) (FIFO_Stack.vhd)]", 6, false); // E
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 12); // E
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 12); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 12); // E
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10); // E
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10); // E
+// TclEventType: FILE_SET_CHANGE
