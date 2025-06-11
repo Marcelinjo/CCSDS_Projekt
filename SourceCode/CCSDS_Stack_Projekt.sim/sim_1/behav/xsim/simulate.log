@@ -1,1 +1,3 @@
 Time resolution is 1 ps
+Note: Testbench finished successfully.
+Time: 60835 ns  Iteration: 0  Process: /TM_GEN_TestDriver_tb/stim_proc  File: C:/Users/tdhoa/Documents/hwsw/CCSDS_Projekt/SourceCode/CCSDS_Stack_Projekt.srcs/sim_1/new/TM_GEN_TestDriver_tb.vhd

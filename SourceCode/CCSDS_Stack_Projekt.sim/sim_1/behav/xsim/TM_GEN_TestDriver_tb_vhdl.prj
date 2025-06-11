@@ -4,11 +4,10 @@ vhdl xil_defaultlib  \
 "../../../../CCSDS_Stack_Projekt.srcs/sources_1/new/FECGenerator.vhd" \
 "../../../../CCSDS_Stack_Projekt.srcs/sources_1/new/FIFO_Stack.vhd" \
 "../../../../CCSDS_Stack_Projekt.srcs/sources_1/new/Header_Generator.vhd" \
-"../../../../CCSDS_Stack_Projekt.srcs/sources_1/new/OCFGenerator.vhd" \
-"../../../../CCSDS_Stack_Projekt.srcs/sources_1/new/PacketTypes.vhd" \
 "../../../../CCSDS_Stack_Projekt.srcs/sources_1/new/PacketSequencer.vhd" \
+"../../../../CCSDS_Stack_Projekt.srcs/sources_1/new/SecHeaderGen.vhd" \
 "../../../../CCSDS_Stack_Projekt.srcs/sources_1/new/TM_Generator.vhd" \
-"../../../../CCSDS_Stack_Projekt.srcs/sources_1/new/TopLevel.vhd" \
+"../../../../CCSDS_Stack_Projekt.srcs/sim_1/new/TM_GEN_TestDriver_tb.vhd" \
 
 # Do not sort compile order
 nosort

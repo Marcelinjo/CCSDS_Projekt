@@ -13,7 +13,7 @@ end TopLevel;
 
 architecture Behavioral of TopLevel is
 
-    -- Komponentendeklaration für TM_Generator
+    -- Komponentendeklaration fï¿½r TM_Generator
     component TM_Generator
         Port (
             clk         : in  STD_LOGIC;
@@ -30,9 +30,9 @@ architecture Behavioral of TopLevel is
     
 
 
-    -- Interne Signale für TM_Generator
+    -- Interne Signale fï¿½r TM_Generator
     signal reset       : STD_LOGIC := '0';
-    signal start       : STD_LOGIC := '0';
+    signal start       : STD_LOGIC := '1';
     signal buffer_out  : STD_LOGIC_VECTOR(16399 downto 0);
     signal buffer_full : STD_LOGIC;
     

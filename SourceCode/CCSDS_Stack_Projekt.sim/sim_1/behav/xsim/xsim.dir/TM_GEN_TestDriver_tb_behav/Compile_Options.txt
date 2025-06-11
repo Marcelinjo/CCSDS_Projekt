@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "TM_GEN_TestDriver_tb_behav" "xil_defaultlib.TM_GEN_TestDriver_tb" -log "elaborate.log" 
