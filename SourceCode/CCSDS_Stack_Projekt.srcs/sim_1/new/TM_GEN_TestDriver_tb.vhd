@@ -77,11 +77,22 @@ begin
         ------------------------------------------------------------
         -- Inject 2050 bytes into FIFO (simulate one full frame)
         ------------------------------------------------------------
+--        for i in 0 to 2049 loop
+--            if (i mod 2) = 0 then
+--                data_in <= x"AA";  -- 10101010
+--            else
+--                data_in <= x"55";  -- 01010101
+--            end if;
+--            data_valid <= '1';
+--            wait for CLK_PERIOD;
+--        end loop;
+
         for i in 0 to 2049 loop
-            data_in    <= std_logic_vector(to_unsigned(i mod 256, 8));
+            data_in    <= (others => '0'); 
             data_valid <= '1';
             wait for CLK_PERIOD;
         end loop;
+        
 
         data_valid <= '0';
         wait for 20 ns;
