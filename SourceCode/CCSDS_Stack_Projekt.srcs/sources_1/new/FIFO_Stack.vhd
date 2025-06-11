@@ -56,6 +56,7 @@ begin
             byte_count <= 0;
             wr_ptr <= 0;
             rd_ptr <= 0;
+            data_out <= (others => '0');
         else
             -- Empfangslogik
             if data_valid = '1' then

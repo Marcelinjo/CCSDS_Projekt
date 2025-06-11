@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_FIFO_Stack_behav" "xil_defaultlib.tb_FIFO_Stack" -log "elaborate.log" 

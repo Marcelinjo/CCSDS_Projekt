@@ -1,0 +1,12 @@
+
+{ 
+    crc :  5610044188992591687  , 
+    ccp_crc :  0  , 
+    cmdline : " --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FIFO_Stack_behav xil_defaultlib.tb_FIFO_Stack" , 
+    buildDate : "May 22 2025" , 
+    buildTime : "00:13:55" , 
+    linkCmd : "C:\\Xilinx\\2025.1\\Vivado\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/tb_FIFO_Stack_behav/xsimk.exe\"   \"xsim.dir/tb_FIFO_Stack_behav/obj/xsim_0.win64.obj\" \"xsim.dir/tb_FIFO_Stack_behav/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\2025.1\\Vivado\\lib\\win64.o\" -lxv_simulator_kernel   -lxv_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
