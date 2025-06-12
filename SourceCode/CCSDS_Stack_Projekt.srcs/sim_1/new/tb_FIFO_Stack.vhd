@@ -73,10 +73,10 @@ begin
 
     begin
         wait for 20 ns;
-        rst <= '0';  -- Deassert reset
+        rst <= '0';  
         wait for 20 ns;
 
-        -- Send header (last two bytes are length = 0x0003)
+        -- Send header
         send_byte(x"AA");
         send_byte(x"BB");
         send_byte(x"CC");
@@ -94,7 +94,7 @@ begin
         wait for 20 ns;
 
         -- Read all bytes out
-        for i in 0 to 8 loop  -- 6 header + 3 payload = 9 bytes
+        for i in 0 to 8 loop  
             read_en <= '1';
             wait for 10 ns;
             read_en <= '0';

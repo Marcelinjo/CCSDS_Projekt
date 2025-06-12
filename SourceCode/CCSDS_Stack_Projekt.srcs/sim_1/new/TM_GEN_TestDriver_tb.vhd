@@ -88,13 +88,13 @@ begin
 --        end loop;
 
         -- Send DEADBEEF
-        data_in    <= x"DE"; data_valid <= '1'; wait for CLK_PERIOD;
-        data_in    <= x"AD"; data_valid <= '1'; wait for CLK_PERIOD;
-        data_in    <= x"BE"; data_valid <= '1'; wait for CLK_PERIOD;
-        data_in    <= x"EF"; data_valid <= '1'; wait for CLK_PERIOD;
+        -- data_in    <= x"DE"; data_valid <= '1'; wait for CLK_PERIOD;
+        -- data_in    <= x"AD"; data_valid <= '1'; wait for CLK_PERIOD;
+        -- data_in    <= x"BE"; data_valid <= '1'; wait for CLK_PERIOD;
+        -- data_in    <= x"EF"; data_valid <= '1'; wait for CLK_PERIOD;
         
         -- Fill rest with zeroes (up to total 2050 bytes)
-        for i in 0 to 2045 loop
+        for i in 0 to 2049 loop
             data_in    <= (others => '0'); 
             data_valid <= '1';
             wait for CLK_PERIOD;
